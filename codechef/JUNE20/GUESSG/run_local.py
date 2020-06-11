@@ -1,4 +1,22 @@
-from JUNE20.GUESSG.solution import lie_answer, truthful_answer, search
+from codechef.JUNE20.GUESSG.solution import search
+
+
+def truthful_answer(val, ans):
+    if ans == val:
+        return 'E'
+    elif ans < val:
+        return 'L'
+    else:
+        return 'G'
+
+
+def lie_answer(val, ans):
+    if ans == val:
+        return 'E'
+    elif ans < val:
+        return 'G'
+    else:
+        return 'L'
 
 
 class Truthful:
